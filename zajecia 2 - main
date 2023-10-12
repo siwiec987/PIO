@@ -1,10 +1,11 @@
 import java.util.Random;
 
-public class Main {
+public class PioGame {
 
     public static void main(String[] args) {
-
         Player player = new Player();
+        player.setName("Ziuta");
+
         Random rand = new Random();
         int number;
         int guess;
@@ -16,7 +17,7 @@ public class Main {
             System.out.println("Kostka: " + number);
 
             guess = player.guess();
-            System.out.println("Gracz: " + guess);
+            System.out.println("Gracz " + player.getName() + ": " + guess);
 
             if (number != guess) {
                 System.out.println("PUDŁO!");
