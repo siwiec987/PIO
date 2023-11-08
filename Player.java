@@ -4,12 +4,11 @@ public class Player {
     private Random brain = new Random();
 
     public Player() {}
-
     public Player(String name) {
         setName(name);
     }
 
-    private String name = "Domyślny Janusz";
+    private String name = "Domyślny ziomal";
 
     public String getName() {
         return name;
@@ -19,7 +18,7 @@ public class Player {
         if (name != null && !name.isEmpty()) {
             this.name = name;
         } else {
-            System.err.println("Nieprawidłowe imie!");
+            System.err.println("Nieprawidłowe imię!");
         }
     }
 
