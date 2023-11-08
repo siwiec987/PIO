@@ -1,9 +1,9 @@
 import java.util.Random;
 
-public class Main {
+public class PioGame {
     public static void main(String[] args) {
 
-        Player player = new Player("ziomal");
+        Player player = new PlayerHuman("ziomal");
 
         Random rand = new Random();
         int number;
