@@ -23,6 +23,9 @@ public class Main {
         cart.removeProduct("JJK-3213");
         System.out.println(cart.numberOfProducts());
         cart.printProducts();
+        cart.removeAllProducts();
+        System.out.println(cart.numberOfProducts());
+        cart.printProducts();
 //        Product a = cart.findProduct("JJK-3213");
 //        System.out.println(a.name);
     }
